@@ -52,10 +52,10 @@
             int[] r = new int[arr1.Length > arr2.Length ? arr1.Length : arr2.Length];
 
             if(arr1.Length > arr2.Length)
-                Array.Resize(ref arr2, arr2.Length + (arr1.Length - arr2.Length));
+                Array.Resize(ref arr2, arr1.Length);
             
             else if(arr2.Length > arr1.Length)
-                Array.Resize(ref arr1, arr1.Length + (arr2.Length - arr1.Length));
+                Array.Resize(ref arr1, arr2.Length);
             
             for(int i = 0; i < (arr1.Length < arr2.Length ? arr1.Length : arr2.Length); i++)
             {
